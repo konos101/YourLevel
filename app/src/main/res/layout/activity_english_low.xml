@@ -33,7 +33,7 @@
             tools:layout_editor_absoluteX="16dp" />
 
         <RadioGroup
-            android:id="@+id/radioOptions"
+            android:id="@+id/radioOptions2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
@@ -93,7 +93,7 @@
             android:layout_marginTop="47dp"
             android:onClick="onNext"
             android:text="Next"
-            app:layout_constraintTop_toBottomOf="@+id/radioOptions"
+            app:layout_constraintTop_toBottomOf="@+id/radioOptions2"
             tools:layout_editor_absoluteX="136dp" />
 
         <TextView

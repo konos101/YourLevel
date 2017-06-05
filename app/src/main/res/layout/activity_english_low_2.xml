@@ -31,7 +31,7 @@
             tools:layout_editor_absoluteX="16dp" />
 
         <RadioGroup
-            android:id="@+id/radioOptions"
+            android:id="@+id/radioOptions2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@+id/txtFrase"
@@ -80,7 +80,7 @@
             android:layout_height="wrap_content"
             android:onClick="onNext"
             android:text="Next"
-            app:layout_constraintTop_toBottomOf="@+id/radioOptions"
+            app:layout_constraintTop_toBottomOf="@+id/radioOptions2"
             tools:layout_editor_absoluteX="136dp"
             android:layout_marginTop="47dp" />
 
@@ -103,7 +103,7 @@
 
             android:src="@android:drawable/ic_media_play"
             android:layout_marginBottom="26dp"
-            app:layout_constraintBottom_toTopOf="@+id/radioOptions" />
+            app:layout_constraintBottom_toTopOf="@+id/radioOptions2" />
 
     </android.support.constraint.ConstraintLayout>
 </LinearLayout>

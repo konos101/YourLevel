@@ -22,6 +22,9 @@
         <activity
             android:name=".EnglishLow2">
         </activity>
+        <activity
+            android:name=".EnglishLow3">
+        </activity>
     </application>
 
 </manifest>

@@ -62,7 +62,7 @@ public class EnglishLow2 extends AppCompatActivity {
                 count++;
                 break;
             case 2:
-                if (op3.isChecked()) {
+                if (op1.isChecked()) {
                     score++;
                 }
                 frase.setText("3)");
@@ -72,7 +72,7 @@ public class EnglishLow2 extends AppCompatActivity {
                 count++;
                 break;
             case 3:
-                if (op3.isChecked()) {
+                if (op2.isChecked()) {
                     score++;
                 }
                 frase.setText("4)");
@@ -92,7 +92,7 @@ public class EnglishLow2 extends AppCompatActivity {
                 count++;
                 break;
             case 5:
-                if (op3.isChecked()) {
+                if (op1.isChecked()) {
                     score++;
                 }
                 frase.setText("6)");
@@ -102,7 +102,7 @@ public class EnglishLow2 extends AppCompatActivity {
                 count++;
                 break;
             case 6:
-                if (op2.isChecked()) {
+                if (op1.isChecked()) {
                     score++;
                 }
                 frase.setText("7)");
@@ -142,11 +142,11 @@ public class EnglishLow2 extends AppCompatActivity {
                 count++;
                 break;
             case 10:
-                if (op3.isChecked()) {
+                if (op2.isChecked()) {
                     score++;
                 }
                 Toast.makeText(this, String.valueOf(score), Toast.LENGTH_LONG).show();
-                //startActivity(new Intent(EnglishLow2.this, EnglishLow3.class));
+                startActivity(new Intent(EnglishLow2.this, EnglishLow3.class));
                 break;
         }
     }
