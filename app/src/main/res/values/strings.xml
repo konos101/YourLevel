@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">YourLevel</string>
+    <string name="start">Start</string>
+    <string name="choose">Choose your language</string>
+    <string name="englishLow">Recommended if you have basic english notions or have studied english less than two years.</string>
+    <string name="englishHigh">Recommended if you have studied english in A-Levels, studied it more than two years or have
+        lived in an english spoken country.</string>
+    <string name="frenchLow">Recommended if you have a basic level of french. Corresponds with A1-A2 levels.</string>
+    <string name="frenchHigh">Recommended if you have a superior level of french. Corresponds with B1-B2.1 levels.</string>
+    <string name="catalan">This test if for people that want a B2 or C1 level.</string>
+
+    <string name="f1">1) Is that _____ book?</string>
+    <string name="f2">2) I can _____ three dogs.</string>
+    <string name="f3">3) We haven\'t got __________ money.</string>
+    <string name="f4">4) I often help __________ brother</string>
+    <string name="f5">5) Does Sally _________ London?</string>
+    <string name="f6">6) Tony plays __________ .</string>
+    <string name="f7">7) Yesterday I __________ very sad.</string>
+    <string name="f8">8) They\'ve come __________ the pipes.</string>
+    <string name="f9">9) When my grandmother is ill in bed, my mother _________ .</string>
+    <string name="f10">10) It\'s the __________ seen.</string>
+
+    <string-array name="languages">
+        <item>English Low</item>
+        <item>English High</item>
+        <item>French Low</item>
+        <item>French High</item>
+        <item>Catalan</item>
+    </string-array>
+
+
+</resources>

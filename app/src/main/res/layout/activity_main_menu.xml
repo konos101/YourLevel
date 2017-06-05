@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.konos101.yourlevel.MainMenu">
+
+    <TextView
+        android:id="@+id/txtLanguage"
+        android:layout_width="344dp"
+        android:layout_height="wrap_content"
+        android:text="@string/choose"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Spinner
+        android:id="@+id/languageSelector"
+        android:layout_width="344dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="52dp"
+        android:entries="@array/languages"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/txtLanguage"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <TextView
+        android:id="@+id/txtDescription"
+        android:layout_width="344dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="78dp"
+        android:text="@string/englishLow"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/languageSelector"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="344dp"
+        android:layout_height="177dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/txtDescription"
+        tools:layout_editor_absoluteX="8dp">
+
+        <Button
+            android:id="@+id/btnGo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="123dp"
+            android:gravity="center"
+            android:onClick="onClickBtn"
+            android:text="@string/start"
+            app:layout_constraintTop_toBottomOf="@+id/txtDescription"
+            tools:layout_editor_absoluteX="136dp" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

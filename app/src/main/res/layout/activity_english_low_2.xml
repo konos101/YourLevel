@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtDescripSes2"
+            android:layout_width="344dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:text="Listen to the audio and then choose the apropaite option"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@+id/txtSection"
+            tools:layout_editor_absoluteX="8dp" />
+
+        <TextView
+            android:id="@+id/txtFrase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="1)"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@+id/txtDescripSes2"
+            tools:layout_editor_absoluteX="16dp" />
+
+        <RadioGroup
+            android:id="@+id/radioOptions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/txtFrase"
+            tools:layout_editor_absoluteX="8dp"
+            android:layout_marginTop="27dp">
+
+            <RadioButton
+                android:id="@+id/opcion1"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="27dp"
+                android:enabled="false"
+                android:text=" Barcelona is very big."
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@+id/txtFrase"
+                tools:layout_editor_absoluteX="44dp" />
+
+            <RadioButton
+                android:id="@+id/opcion2"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginTop="16dp"
+                android:checked="true"
+                android:enabled="false"
+                android:text="Two sisters."
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@+id/opcion1"
+                tools:layout_editor_absoluteX="44dp" />
+
+            <RadioButton
+                android:id="@+id/opcion3"
+                android:layout_width="141dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:enabled="false"
+                android:text="Maria Torres."
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@+id/opcion2"
+                tools:layout_editor_absoluteX="44dp" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onNext"
+            android:text="Next"
+            app:layout_constraintTop_toBottomOf="@+id/radioOptions"
+            tools:layout_editor_absoluteX="136dp"
+            android:layout_marginTop="47dp" />
+
+        <TextView
+            android:id="@+id/txtSection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Section 2"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="131dp"
+            tools:layout_editor_absoluteY="27dp" />
+
+        <ImageButton
+            android:id="@+id/imgPLay"
+            android:layout_width="23dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="36dp"
+            android:onClick="Play"
+            app:layout_constraintLeft_toRightOf="@+id/txtFrase"
+
+            android:src="@android:drawable/ic_media_play"
+            android:layout_marginBottom="26dp"
+            app:layout_constraintBottom_toTopOf="@+id/radioOptions" />
+
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>
