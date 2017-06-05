@@ -39,7 +39,7 @@
             android:layout_marginTop="27dp">
 
             <RadioButton
-                android:id="@+id/opcion1"
+                android:id="@+id/opcion11"
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"
                 android:layout_marginTop="27dp"
@@ -58,7 +58,7 @@
                 android:enabled="false"
                 android:text="Two sisters."
                 android:textSize="18sp"
-                app:layout_constraintTop_toBottomOf="@+id/opcion1"
+                app:layout_constraintTop_toBottomOf="@+id/opcion11"
                 tools:layout_editor_absoluteX="44dp" />
 
             <RadioButton

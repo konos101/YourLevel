@@ -29,7 +29,7 @@ public class EnglishLow2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_english_low_2);
 
-        op1 = (RadioButton) findViewById(R.id.opcion1);
+        op1 = (RadioButton) findViewById(R.id.opcion11);
         op2 = (RadioButton) findViewById(R.id.opcion2);
         op3 = (RadioButton) findViewById(R.id.opcion3);
         btnNext = (Button) findViewById(R.id.btnNext);
