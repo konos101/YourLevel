@@ -19,11 +19,12 @@ public class EnglishLow3 extends AppCompatActivity {
     private Button btnNext;
     private TextView frase, frase2;
     private int count = 0, score = 0;
+    private String text;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_english_low_2);
+        setContentView(R.layout.activity_english_low_3);
 
         op1 = (RadioButton) findViewById(R.id.opcion1);
         op2 = (RadioButton) findViewById(R.id.opcion2);
@@ -38,6 +39,9 @@ public class EnglishLow3 extends AppCompatActivity {
         btnNext = (Button) findViewById(R.id.btnNext);
         frase = (TextView) findViewById(R.id.txtFrase);
         frase2 = (TextView) findViewById(R.id.txtFrase2);
+
+        Intent mIntent = getIntent();
+        score = mIntent.getIntExtra("score", score);
     }
 
     public void onNext(View v) {
@@ -262,7 +266,15 @@ public class EnglishLow3 extends AppCompatActivity {
                     }
                 }
                 Toast.makeText(this, String.valueOf(score), Toast.LENGTH_LONG).show();
-                //startActivity(new Intent(EnglishLow2.this, EnglishLow3.class));
+                if (score >= 35){
+                    text = "Your did it perfectly. You are able to take the higher level test.";
+                }else{
+                    text = "You should take this exam or go to this course";
+                }
+                Intent myIntent = new Intent(EnglishLow3.this, Results.class);
+                myIntent.putExtra("score", score);
+                myIntent.putExtra("text", text);
+                startActivity(myIntent);
                 break;
         }
     }

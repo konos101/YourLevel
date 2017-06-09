@@ -18,25 +18,30 @@
             android:textAlignment="center"
             android:textSize="20sp"
             app:layout_constraintTop_toBottomOf="@+id/txtSection"
-            tools:layout_editor_absoluteX="8dp" />
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent" />
 
         <TextView
             android:id="@+id/txtFrase"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="22dp"
+            android:layout_marginTop="23dp"
             android:text="1)"
             android:textSize="18sp"
             app:layout_constraintTop_toBottomOf="@+id/txtDescripSes2"
-            tools:layout_editor_absoluteX="16dp" />
+            android:layout_marginLeft="33dp"
+            app:layout_constraintLeft_toLeftOf="parent" />
 
         <RadioGroup
             android:id="@+id/radioOptions2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@+id/txtFrase"
-            tools:layout_editor_absoluteX="8dp"
-            android:layout_marginTop="27dp">
+            android:layout_marginTop="26dp"
+            android:layout_marginLeft="33dp"
+            app:layout_constraintLeft_toLeftOf="parent">
 
             <RadioButton
                 android:id="@+id/opcion11"
@@ -81,8 +86,11 @@
             android:onClick="onNext"
             android:text="Next"
             app:layout_constraintTop_toBottomOf="@+id/radioOptions2"
-            tools:layout_editor_absoluteX="136dp"
-            android:layout_marginTop="47dp" />
+            android:layout_marginTop="47dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent" />
 
         <TextView
             android:id="@+id/txtSection"
@@ -90,19 +98,24 @@
             android:layout_height="wrap_content"
             android:text="Section 2"
             android:textSize="24sp"
-            tools:layout_editor_absoluteX="131dp"
-            tools:layout_editor_absoluteY="27dp" />
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="25dp"
+            app:layout_constraintHorizontal_bias="0.501" />
 
         <ImageButton
             android:id="@+id/imgPLay"
-            android:layout_width="23dp"
-            android:layout_height="20dp"
+            android:layout_width="31dp"
+            android:layout_height="26dp"
             android:layout_marginLeft="36dp"
             android:onClick="Play"
             app:layout_constraintLeft_toRightOf="@+id/txtFrase"
 
             android:src="@android:drawable/ic_media_play"
-            android:layout_marginBottom="26dp"
+            android:layout_marginBottom="21dp"
             app:layout_constraintBottom_toTopOf="@+id/radioOptions2" />
 
     </android.support.constraint.ConstraintLayout>

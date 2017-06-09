@@ -24,7 +24,7 @@ public class EnglishLow extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_english_low);
 
-        op1 = (RadioButton) findViewById(R.id.opcion11);
+        op1 = (RadioButton) findViewById(R.id.opcion1);
         op2 = (RadioButton) findViewById(R.id.opcion2);
         op3 = (RadioButton) findViewById(R.id.opcion3);
         op4 = (RadioButton) findViewById(R.id.opcion4);
@@ -151,7 +151,9 @@ public class EnglishLow extends AppCompatActivity {
                     score++;
                 }
                 Toast.makeText(this, String.valueOf(score), Toast.LENGTH_LONG).show();
-                startActivity(new Intent(EnglishLow.this, EnglishLow2.class));
+                Intent myIntent = new Intent(EnglishLow.this, EnglishLow2.class);
+                myIntent.putExtra("score", score);
+                startActivity(myIntent);
                 break;
         }
     }

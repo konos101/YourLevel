@@ -36,6 +36,10 @@ public class EnglishLow2 extends AppCompatActivity {
         frase = (TextView) findViewById(R.id.txtFrase);
         play = (ImageButton) findViewById(R.id.imgPLay);
 
+        Intent mIntent = getIntent();
+        score = mIntent.getIntExtra("score", score);
+
+
     }
 
     public void onNext(View v) {
@@ -146,7 +150,9 @@ public class EnglishLow2 extends AppCompatActivity {
                     score++;
                 }
                 Toast.makeText(this, String.valueOf(score), Toast.LENGTH_LONG).show();
-                startActivity(new Intent(EnglishLow2.this, EnglishLow3.class));
+                Intent myIntent = new Intent(EnglishLow2.this, EnglishLow3.class);
+                myIntent.putExtra("score", score);
+                startActivity(myIntent);
                 break;
         }
     }
